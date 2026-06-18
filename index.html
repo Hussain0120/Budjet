@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <script  defer src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="topsection">
+            <div class="card">
+                <h2>Budget</h2>
+                <input type="number" id="budgetinput" placeholder="Enter Total Amount">
+                <button id="setbudgetbtn">Set Budget</button>
+            </div>
+
+            <div class="card">
+                <h2>Expenses</h2>
+                <input type="text" id="expensetitleinput" placeholder="Enter Title of Product">
+                <input type="number" id="expensecostinput" placeholder="Enter Cost of Product">
+                <button id="checkamountbtn">Check Amount</button>
+            </div>
+        </div>
+
+        <div class="statsbar">
+            <div class="statitem">
+                <div class="statlabel">Total Budget</div>
+                <div class="statvalue" id="totalbudgetval">0</div>
+            </div>
+            <div class="statitem">
+                <div class="statlabel">Expenses</div>
+                <div class="statvalue" id="totalexpensesval">0</div>
+            </div>
+            <div class="statitem">
+                <div class="statlabel">Balance</div>
+                <div class="statvalue" id="balanceval">0</div>
+            </div>
+        </div>
+
+        <div class="listsection">
+            <h2>Expense List</h2>
+            <div id="expenselistcontainer"></div>
+        </div>
+
+    </div>
+</body>
+</html>
